@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Palette (do not use directly in layouts) -->
+    <color name="charcoal">#1B1B18</color>
+    <color name="charcoal_deep">#121211</color>
+    <color name="olive">#6E7F57</color>
+    <color name="olive_soft">#8A9A77</color>
+    <color name="olive_container">#E4EBD9</color>
+    <color name="cream">#F6F1E8</color>
+    <color name="cream_deep">#EBE4D6</color>
+    <color name="blush">#D4A8A8</color>
+    <color name="blush_container">#F3E6E6</color>
+    <color name="stone">#5A564F</color>
+    <color name="stone_soft">#8F8A82</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Semantic tokens — light -->
+    <color name="primary">@color/charcoal</color>
+    <color name="on_primary">@color/cream</color>
+    <color name="primary_container">#E7E2D8</color>
+    <color name="on_primary_container">@color/charcoal</color>
+
+    <color name="secondary">@color/olive</color>
+    <color name="on_secondary">@color/white</color>
+    <color name="secondary_container">@color/olive_container</color>
+    <color name="on_secondary_container">#2F3A24</color>
+
+    <color name="accent">@color/blush</color>
+    <color name="on_accent">@color/charcoal</color>
+    <color name="accent_container">@color/blush_container</color>
+    <color name="on_accent_container">#4A2F2F</color>
+
+    <color name="background">@color/cream</color>
+    <color name="on_background">@color/charcoal</color>
+    <color name="surface">#FFFCFA</color>
+    <color name="on_surface">@color/charcoal</color>
+    <color name="surface_variant">@color/cream_deep</color>
+    <color name="on_surface_variant">@color/stone</color>
+    <color name="outline">#DDD6C8</color>
+    <color name="outline_variant">#E8E2D6</color>
+
+    <color name="text_primary">@color/charcoal</color>
+    <color name="text_secondary">@color/stone</color>
+    <color name="text_disabled">#B8B4AD</color>
+
+    <color name="error">#B54A3C</color>
+    <color name="on_error">@color/white</color>
+    <color name="success">#4F6B43</color>
+    <color name="scrim">#99000000</color>
+
+    <color name="map_background">#EFE8DA</color>
+    <color name="map_block">#FFFCFA</color>
+    <color name="map_corridor">#E4DCCB</color>
+    <color name="map_route">@color/olive</color>
+    <color name="map_facility">@color/blush_container</color>
+    <color name="map_label">@color/charcoal</color>
+</resources>

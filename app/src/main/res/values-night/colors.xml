@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">@color/cream</color>
+    <color name="on_primary">@color/charcoal</color>
+    <color name="primary_container">#2A2A26</color>
+    <color name="on_primary_container">@color/cream</color>
+
+    <color name="secondary">@color/olive_soft</color>
+    <color name="on_secondary">@color/charcoal_deep</color>
+    <color name="secondary_container">#2F3828</color>
+    <color name="on_secondary_container">@color/olive_container</color>
+
+    <color name="accent">#E0BDBD</color>
+    <color name="on_accent">@color/charcoal</color>
+    <color name="accent_container">#3A2C2C</color>
+    <color name="on_accent_container">@color/blush_container</color>
+
+    <color name="background">#141413</color>
+    <color name="on_background">@color/cream</color>
+    <color name="surface">#1F1F1C</color>
+    <color name="on_surface">@color/cream</color>
+    <color name="surface_variant">#2A2A26</color>
+    <color name="on_surface_variant">#C4BFB6</color>
+    <color name="outline">#3F3E39</color>
+    <color name="outline_variant">#2F2E2A</color>
+
+    <color name="text_primary">@color/cream</color>
+    <color name="text_secondary">#C4BFB6</color>
+    <color name="text_disabled">#7A766E</color>
+
+    <color name="error">#E07A6C</color>
+    <color name="on_error">@color/charcoal_deep</color>
+    <color name="success">#8A9A77</color>
+    <color name="scrim">#CC000000</color>
+
+    <color name="map_background">#1A1A17</color>
+    <color name="map_block">#252522</color>
+    <color name="map_corridor">#1F1F1C</color>
+    <color name="map_route">@color/olive_soft</color>
+    <color name="map_facility">#3A2C2C</color>
+    <color name="map_label">@color/cream</color>
+</resources>

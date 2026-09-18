@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_mall"
+    style="@style/Widget.MallTracker.Card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:contentDescription="@string/cd_mall_card"
+    android:focusable="true"
+    android:minHeight="@dimen/touch_target_min">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_md">
+
+        <ImageView
+            android:id="@+id/iv_mall_image"
+            android:layout_width="@dimen/mall_card_image_size"
+            android:layout_height="@dimen/mall_card_image_size"
+            android:background="@drawable/bg_image_placeholder"
+            android:contentDescription="@string/cd_mall_image"
+            android:padding="@dimen/space_sm"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_mall"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_mall_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginEnd="@dimen/space_xs"
+            android:textAppearance="@style/TextAppearance.MallTracker.SectionHeading"
+            app:layout_constraintBottom_toTopOf="@id/tv_mall_city"
+            app:layout_constraintEnd_toStartOf="@id/iv_chevron"
+            app:layout_constraintStart_toEndOf="@id/iv_mall_image"
+            app:layout_constraintTop_toTopOf="@id/iv_mall_image"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="Canal Walk" />
+
+        <TextView
+            android:id="@+id/tv_mall_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
+            app:layout_constraintBottom_toBottomOf="@id/iv_mall_image"
+            app:layout_constraintEnd_toEndOf="@id/tv_mall_name"
+            app:layout_constraintStart_toStartOf="@id/tv_mall_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_mall_name"
+            tools:text="Cape Town" />
+
+        <ImageView
+            android:id="@+id/iv_chevron"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:contentDescription="@string/cd_chevron"
+            android:src="@drawable/ic_chevron_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

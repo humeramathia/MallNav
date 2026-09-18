@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="splash_delay_ms">1400</integer>
+    <integer name="motion_duration_short">200</integer>
+    <integer name="motion_duration_medium">320</integer>
+</resources>

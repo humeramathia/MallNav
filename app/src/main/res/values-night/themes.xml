@@ -1,0 +1,4 @@
+<resources>
+    <!-- Night colors live in values-night/colors.xml.
+         System bar contrast is controlled by is_light_system_bars. -->
+</resources>

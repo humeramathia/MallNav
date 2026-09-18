@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.button.MaterialButtonToggleGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floor_selector"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/cd_floor_selector"
+    app:checkedButton="@id/btn_floor_l1"
+    app:selectionRequired="true"
+    app:singleSelection="true">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_floor_l1"
+        style="@style/Widget.MallTracker.FloorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/floor_l1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_floor_l2"
+        style="@style/Widget.MallTracker.FloorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/floor_l2" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_floor_l3"
+        style="@style/Widget.MallTracker.FloorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/floor_l3" />
+</com.google.android.material.button.MaterialButtonToggleGroup>

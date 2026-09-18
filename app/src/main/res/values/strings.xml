@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MallTracker</string>
+    <string name="app_tagline">Navigate your mall with ease.</string>
+
+    <!-- Common actions -->
+    <string name="action_continue">Continue</string>
+    <string name="action_change">Change</string>
+    <string name="action_back">Back</string>
+    <string name="action_search">Search</string>
+    <string name="action_navigate">Navigate</string>
+    <string name="action_view_map">View Map</string>
+    <string name="action_end_navigation">End Navigation</string>
+    <string name="action_locate_me">Locate me</string>
+    <string name="action_zoom_in">Zoom in</string>
+    <string name="action_zoom_out">Zoom out</string>
+
+    <!-- Search hints -->
+    <string name="hint_search_malls">Search malls</string>
+    <string name="hint_search_stores">Search stores</string>
+    <string name="hint_search_stores_facilities">Search stores and facilities</string>
+    <string name="hint_search_nearby">Search for a store</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_directory">Directory</string>
+    <string name="nav_profile">Profile</string>
+
+    <!-- Floors -->
+    <string name="floor_l1">L1</string>
+    <string name="floor_l2">L2</string>
+    <string name="floor_l3">L3</string>
+
+    <!-- UI states -->
+    <string name="state_loading">Loading…</string>
+    <string name="state_empty">Nothing to show yet.</string>
+    <string name="state_no_results">No results match your search.</string>
+    <string name="state_locate_me_unavailable">Coming soon</string>
+
+    <!-- Component labels -->
+    <string name="label_nearby_stores">Nearby stores</string>
+    <string name="label_next_step">Next step</string>
+    <string name="label_from">From</string>
+    <string name="label_to">To</string>
+
+    <!-- Accessibility -->
+    <string name="cd_back">Go back</string>
+    <string name="cd_search">Search</string>
+    <string name="cd_mall_card">Open mall</string>
+    <string name="cd_mall_image">Mall image</string>
+    <string name="cd_store_card">Open store</string>
+    <string name="cd_chevron">Open</string>
+    <string name="cd_map_marker">Map marker</string>
+    <string name="cd_zoom_in">Zoom in on map</string>
+    <string name="cd_zoom_out">Zoom out on map</string>
+    <string name="cd_locate_me">Locate me. This feature is coming soon.</string>
+    <string name="cd_floor_selector">Select mall floor</string>
+    <string name="cd_primary_action">Primary action</string>
+</resources>
