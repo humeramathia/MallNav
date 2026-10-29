@@ -119,4 +119,15 @@
     <string name="cd_floor_selector">Select mall floor</string>
     <string name="cd_primary_action">Primary action</string>
     <string name="cd_bottom_nav">Main navigation</string>
+    <string name="camera_live">LIVE</string>
+    <string name="camera_hold_up">Hold your phone up. We’ll match landmarks in front of you.</string>
+    <string name="camera_permission_body">Allow camera to see live directions over the mall corridor.</string>
+    <string name="camera_unavailable">Camera isn’t available. Directions still work without it.</string>
+    <string name="action_enable_camera">Enable camera</string>
+    <string name="action_show_map">Map</string>
+    <string name="action_show_camera">Camera</string>
+    <string name="nav_distance_live">120 m ahead</string>
+    <string name="ar_label_corridor">Main corridor</string>
+    <string name="cd_camera_preview">Live camera navigation</string>
+    <string name="cd_nav_arrow">Walk this way</string>
 </resources>
