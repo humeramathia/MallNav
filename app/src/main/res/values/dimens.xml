@@ -41,6 +41,9 @@
     <dimen name="map_preview_height">180dp</dimen>
     <dimen name="map_marker_size">32dp</dimen>
     <dimen name="bottom_nav_height">80dp</dimen>
+    <dimen name="splash_mark_size">64dp</dimen>
+    <dimen name="splash_accent_width">40dp</dimen>
+    <dimen name="splash_accent_height">2dp</dimen>
 
     <!-- Type -->
     <dimen name="text_large_heading">32sp</dimen>

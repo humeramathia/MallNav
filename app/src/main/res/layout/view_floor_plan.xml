@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/corridor"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/map_corridor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/block_woolworths"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="@dimen/space_xs"
+        android:background="@drawable/bg_store_block"
+        android:backgroundTint="@color/sand_container"
+        android:gravity="center"
+        android:text="Woolworths"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintBottom_toTopOf="@id/corridor"
+        app:layout_constraintEnd_toStartOf="@id/block_clicks"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/block_clicks"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_store_block"
+        android:backgroundTint="@color/blush_container"
+        android:gravity="center"
+        android:text="Clicks"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintBottom_toTopOf="@id/corridor"
+        app:layout_constraintEnd_toStartOf="@id/block_bathrooms"
+        app:layout_constraintStart_toEndOf="@id/block_woolworths" />
+
+    <TextView
+        android:id="@+id/block_bathrooms"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="@dimen/space_xs"
+        android:background="@drawable/bg_store_block"
+        android:backgroundTint="@color/map_facility"
+        android:gravity="center"
+        android:text="WC"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintBottom_toTopOf="@id/corridor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/block_clicks" />
+
+    <TextView
+        android:id="@+id/block_mrprice"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginEnd="@dimen/space_xs"
+        android:background="@drawable/bg_store_block"
+        android:backgroundTint="@color/olive_container"
+        android:gravity="center"
+        android:text="Mr Price"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintEnd_toStartOf="@id/block_escalator"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/corridor" />
+
+    <TextView
+        android:id="@+id/block_escalator"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_store_block"
+        android:gravity="center"
+        android:text="Escalator"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintEnd_toStartOf="@id/block_nike"
+        app:layout_constraintStart_toEndOf="@id/block_mrprice"
+        app:layout_constraintTop_toBottomOf="@id/corridor" />
+
+    <TextView
+        android:id="@+id/block_nike"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="@dimen/space_xs"
+        android:background="@drawable/bg_store_block"
+        android:backgroundTint="@color/sage_container"
+        android:gravity="center"
+        android:text="Nike"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/block_escalator"
+        app:layout_constraintTop_toBottomOf="@id/corridor" />
+
+    <TextView
+        android:id="@+id/tv_entrance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_xs"
+        android:text="Entrance A"
+        android:textAppearance="@style/TextAppearance.MallTracker.MapLabel"
+        app:layout_constraintBottom_toTopOf="@id/block_woolworths"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

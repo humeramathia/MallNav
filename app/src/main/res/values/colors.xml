@@ -10,6 +10,12 @@
     <color name="cream_deep">#EBE4D6</color>
     <color name="blush">#D4A8A8</color>
     <color name="blush_container">#F3E6E6</color>
+    <color name="terracotta">#C26A4A</color>
+    <color name="terracotta_container">#F8E0D6</color>
+    <color name="sage">#4F8B78</color>
+    <color name="sage_container">#D7EDE5</color>
+    <color name="sand">#D4A054</color>
+    <color name="sand_container">#F6E8C8</color>
     <color name="stone">#5A564F</color>
     <color name="stone_soft">#8F8A82</color>
     <color name="black">#FF000000</color>
@@ -55,4 +61,17 @@
     <color name="map_route">@color/olive</color>
     <color name="map_facility">@color/blush_container</color>
     <color name="map_label">@color/charcoal</color>
+
+    <color name="hero_olive">@color/olive</color>
+    <color name="hero_blush">@color/blush</color>
+    <color name="hero_terracotta">@color/terracotta</color>
+    <color name="hero_sage">@color/sage</color>
+    <color name="hero_banner">@color/olive</color>
+    <color name="on_hero_banner">@color/white</color>
+    <color name="category_fashion">@color/blush_container</color>
+    <color name="category_food">@color/sand_container</color>
+    <color name="category_beauty">@color/blush_container</color>
+    <color name="category_electronics">@color/sage_container</color>
+    <color name="category_sports">@color/olive_container</color>
+    <color name="category_services">@color/cream_deep</color>
 </resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/screen_padding_horizontal"
+    android:paddingTop="@dimen/screen_padding_vertical"
+    android:paddingEnd="@dimen/screen_padding_horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_back"
+        android:src="@drawable/ic_arrow_back" />
+
+    <TextView
+        android:id="@+id/tv_category_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/bg_image_placeholder"
+        android:paddingStart="@dimen/space_sm"
+        android:paddingTop="@dimen/space_xxs"
+        android:paddingEnd="@dimen/space_sm"
+        android:paddingBottom="@dimen/space_xxs"
+        android:textAppearance="@style/TextAppearance.MallTracker.Caption"
+        tools:text="Fashion" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:textAppearance="@style/TextAppearance.MallTracker.LargeHeading"
+        tools:text="Nike" />
+
+    <TextView
+        android:id="@+id/tv_meta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xs"
+        android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
+        tools:text="Level 2 · Unit 214" />
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:textAppearance="@style/TextAppearance.MallTracker.Body"
+        tools:text="Sportswear, footwear and accessories." />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_navigate"
+        style="@style/Widget.MallTracker.Button.Prominent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xl"
+        android:text="@string/action_navigate_here"
+        app:icon="@drawable/ic_explore" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_map"
+        style="@style/Widget.MallTracker.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:text="@string/action_view_map"
+        app:icon="@drawable/ic_map" />
+</LinearLayout>

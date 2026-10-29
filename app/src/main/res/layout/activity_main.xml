@@ -5,32 +5,41 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    android:padding="@dimen/screen_padding_horizontal"
-    tools:context=".MainActivity">
+    android:background="@color/background">
 
-    <TextView
-        android:id="@+id/tv_preview_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textAppearance="@style/TextAppearance.MallTracker.LargeHeading"
-        app:layout_constraintBottom_toTopOf="@id/tv_preview_subtitle"
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav_divider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/fragment_home" />
 
-    <TextView
-        android:id="@+id/tv_preview_subtitle"
-        android:layout_width="wrap_content"
+    <View
+        android:id="@+id/bottom_nav_divider"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/outline"
+        app:layout_constraintBottom_toTopOf="@id/bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_nav"
+        style="@style/Widget.MallTracker.BottomNavigation"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/space_xs"
-        android:text="@string/app_tagline"
-        android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
+        android:background="@color/surface"
+        android:contentDescription="@string/cd_bottom_nav"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_preview_title" />
-
+        app:menu="@menu/bottom_nav_menu"
+        tools:visibility="visible" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,20 +13,32 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/space_md">
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/accent_bar"
+            android:layout_width="8dp"
+            android:layout_height="0dp"
+            android:background="@color/secondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/iv_mall_image"
             android:layout_width="@dimen/mall_card_image_size"
             android:layout_height="@dimen/mall_card_image_size"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_marginTop="@dimen/space_md"
+            android:layout_marginBottom="@dimen/space_md"
             android:background="@drawable/bg_image_placeholder"
-            android:contentDescription="@string/cd_mall_image"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
             android:padding="@dimen/space_sm"
             android:scaleType="centerInside"
             android:src="@drawable/ic_mall"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/accent_bar"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
@@ -49,17 +61,32 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/space_xxs"
             android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
-            app:layout_constraintBottom_toBottomOf="@id/iv_mall_image"
+            app:layout_constraintBottom_toTopOf="@id/tv_store_count"
             app:layout_constraintEnd_toEndOf="@id/tv_mall_name"
             app:layout_constraintStart_toStartOf="@id/tv_mall_name"
             app:layout_constraintTop_toBottomOf="@id/tv_mall_name"
             tools:text="Cape Town" />
 
+        <TextView
+            android:id="@+id/tv_store_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_xxs"
+            android:textAppearance="@style/TextAppearance.MallTracker.Caption"
+            android:textColor="@color/secondary"
+            app:layout_constraintBottom_toBottomOf="@id/iv_mall_image"
+            app:layout_constraintEnd_toEndOf="@id/tv_mall_name"
+            app:layout_constraintStart_toStartOf="@id/tv_mall_name"
+            app:layout_constraintTop_toBottomOf="@id/tv_mall_city"
+            tools:text="12 places" />
+
         <ImageView
             android:id="@+id/iv_chevron"
             android:layout_width="@dimen/icon_size"
             android:layout_height="@dimen/icon_size"
-            android:contentDescription="@string/cd_chevron"
+            android:layout_marginEnd="@dimen/space_md"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
             android:src="@drawable/ic_chevron_right"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

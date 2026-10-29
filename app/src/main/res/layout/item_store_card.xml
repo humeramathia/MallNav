@@ -17,15 +17,25 @@
         android:minHeight="@dimen/store_card_min_height"
         android:padding="@dimen/space_md">
 
+        <View
+            android:id="@+id/category_dot"
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:background="@drawable/bg_circle_secondary"
+            app:layout_constraintBottom_toBottomOf="@id/tv_store_name"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/tv_store_name" />
+
         <TextView
             android:id="@+id/tv_store_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_sm"
             android:layout_marginEnd="@dimen/space_xs"
             android:textAppearance="@style/TextAppearance.MallTracker.SectionHeading"
             app:layout_constraintBottom_toTopOf="@id/tv_store_category"
             app:layout_constraintEnd_toStartOf="@id/tv_store_floor"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@id/category_dot"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed"
             tools:text="Nike" />

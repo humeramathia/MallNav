@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/screen_padding_horizontal"
+    android:paddingTop="@dimen/screen_padding_vertical"
+    android:paddingEnd="@dimen/screen_padding_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/profile_title"
+        android:textAppearance="@style/TextAppearance.MallTracker.LargeHeading" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:background="@drawable/bg_hero_banner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/space_lg">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:background="@drawable/bg_avatar"
+            android:contentDescription="@null"
+            android:padding="@dimen/space_sm"
+            android:src="@drawable/ic_person"
+            app:tint="@color/terracotta" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/space_md"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_guest_name"
+                android:textAppearance="@style/TextAppearance.MallTracker.SectionHeading"
+                android:textColor="@color/on_hero_banner" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_xxs"
+                android:text="@string/profile_guest_body"
+                android:textAppearance="@style/TextAppearance.MallTracker.Caption"
+                android:textColor="@color/on_hero_banner" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/row_account"
+        layout="@layout/item_profile_row" />
+
+    <include
+        android:id="@+id/row_notifications"
+        layout="@layout/item_profile_row" />
+
+    <include
+        android:id="@+id/row_appearance"
+        layout="@layout/item_profile_row" />
+
+    <include
+        android:id="@+id/row_about"
+        layout="@layout/item_profile_row" />
+</LinearLayout>

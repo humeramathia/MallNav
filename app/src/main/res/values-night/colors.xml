@@ -39,4 +39,12 @@
     <color name="map_route">@color/olive_soft</color>
     <color name="map_facility">#3A2C2C</color>
     <color name="map_label">@color/cream</color>
+    <color name="hero_banner">@color/olive</color>
+    <color name="on_hero_banner">@color/cream</color>
+    <color name="category_fashion">#3A2C2C</color>
+    <color name="category_food">#3A3420</color>
+    <color name="category_beauty">#3A2C2C</color>
+    <color name="category_electronics">#24332E</color>
+    <color name="category_sports">#2F3828</color>
+    <color name="category_services">#2A2A26</color>
 </resources>

@@ -2,54 +2,109 @@
 <resources>
     <string name="app_name">MallTracker</string>
     <string name="app_tagline">Navigate your mall with ease.</string>
+    <string name="home_title">Where are you shopping?</string>
+    <string name="home_subtitle">Choose a mall to get started.</string>
+    <string name="home_banner_title">Landmark navigation</string>
+    <string name="home_banner_body">Tell us a store you can see. We’ll guide you from there — no GPS needed.</string>
+    <string name="home_store_count">%1$d places</string>
+    <string name="cd_splash_brand">MallTracker</string>
+    <string name="cd_open_mall">Open %1$s in %2$s</string>
+    <string name="cd_mall_list">Mall list</string>
+    <string name="cd_store_list">Store list</string>
 
-    <!-- Common actions -->
     <string name="action_continue">Continue</string>
     <string name="action_change">Change</string>
     <string name="action_back">Back</string>
     <string name="action_search">Search</string>
     <string name="action_navigate">Navigate</string>
+    <string name="action_navigate_here">Navigate Here</string>
     <string name="action_view_map">View Map</string>
+    <string name="action_find_store">Find a Store</string>
     <string name="action_end_navigation">End Navigation</string>
+    <string name="action_start_navigation">Start Navigation</string>
     <string name="action_locate_me">Locate me</string>
     <string name="action_zoom_in">Zoom in</string>
     <string name="action_zoom_out">Zoom out</string>
+    <string name="action_directory">Store Directory</string>
+    <string name="action_facilities">Facilities</string>
+    <string name="action_promotions">Promotions</string>
 
-    <!-- Search hints -->
     <string name="hint_search_malls">Search malls</string>
     <string name="hint_search_stores">Search stores</string>
     <string name="hint_search_stores_facilities">Search stores and facilities</string>
     <string name="hint_search_nearby">Search for a store</string>
 
-    <!-- Bottom navigation -->
     <string name="nav_home">Home</string>
     <string name="nav_map">Map</string>
     <string name="nav_directory">Directory</string>
     <string name="nav_profile">Profile</string>
 
-    <!-- Floors -->
     <string name="floor_l1">L1</string>
     <string name="floor_l2">L2</string>
     <string name="floor_l3">L3</string>
+    <string name="label_floor">Level %1$s</string>
 
-    <!-- UI states -->
     <string name="state_loading">Loading…</string>
     <string name="state_empty">Nothing to show yet.</string>
     <string name="state_no_results">No results match your search.</string>
     <string name="state_locate_me_unavailable">Coming soon</string>
+    <string name="state_select_mall">Pick a mall on Home to explore this tab.</string>
 
-    <!-- Component labels -->
+    <string name="mall_home_subtitle">Explore the mall</string>
+    <string name="directory_title">Store Directory</string>
+    <string name="map_title">Mall Map</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_guest_name">Guest shopper</string>
+    <string name="profile_guest_body">Account features will arrive in a later phase.</string>
+    <string name="profile_account">Account</string>
+    <string name="profile_account_body">Sign-in is not part of this UI phase.</string>
+    <string name="profile_notifications">Notifications</string>
+    <string name="profile_notifications_body">Choose which mall updates you want later.</string>
+    <string name="profile_appearance">Appearance</string>
+    <string name="profile_appearance_body">Light and dark follow your device theme.</string>
+    <string name="profile_about">About MallTracker</string>
+    <string name="profile_about_body">Indoor mall navigation with landmark-based directions. Maps, routing, and positioning come next.</string>
+
+    <string name="starting_title">What store can you see?</string>
+    <string name="starting_subtitle">Tell us what you’re near and we’ll guide you from there.</string>
+    <string name="confirm_title">You’re starting near</string>
+    <string name="destination_title">Where do you want to go?</string>
+    <string name="destination_subtitle">Choose your destination.</string>
+    <string name="route_title">Your route</string>
+    <string name="route_distance_label">Estimated distance</string>
+    <string name="route_time_label">Estimated time</string>
+    <string name="route_distance_value">120 m</string>
+    <string name="route_time_value">2 min</string>
+    <string name="nav_to">To %1$s</string>
+    <string name="nav_near">Starting near %1$s</string>
+    <string name="nav_instruction">Walk straight</string>
+    <string name="nav_instruction_body">Continue toward the main corridor.</string>
+    <string name="nav_next_step_body">Turn right at Woolworths.</string>
+    <string name="nav_floor_prompt">Take the escalator to Level 2.</string>
+    <string name="nav_go_level_2">Level 2</string>
     <string name="label_nearby_stores">Nearby stores</string>
     <string name="label_next_step">Next step</string>
     <string name="label_from">From</string>
     <string name="label_to">To</string>
+    <string name="label_unit">Unit %1$s</string>
+    <string name="facilities_title">Facilities</string>
+    <string name="promotions_title">Promotions</string>
+    <string name="promo_one_title">Nike — extra 20% off footwear</string>
+    <string name="promo_one_body">Level 2 · Ends Sunday</string>
+    <string name="promo_two_title">Starbucks happy hour</string>
+    <string name="promo_two_body">Level 1 · 3–5 pm</string>
+    <string name="category_all">All</string>
+    <string name="category_stores">Stores</string>
+    <string name="category_food">Food</string>
+    <string name="category_facilities">Facilities</string>
+    <string name="category_services">Services</string>
 
-    <!-- Accessibility -->
     <string name="cd_back">Go back</string>
     <string name="cd_search">Search</string>
     <string name="cd_mall_card">Open mall</string>
     <string name="cd_mall_image">Mall image</string>
     <string name="cd_store_card">Open store</string>
+    <string name="cd_open_store">Open %1$s</string>
     <string name="cd_chevron">Open</string>
     <string name="cd_map_marker">Map marker</string>
     <string name="cd_zoom_in">Zoom in on map</string>
@@ -57,4 +112,5 @@
     <string name="cd_locate_me">Locate me. This feature is coming soon.</string>
     <string name="cd_floor_selector">Select mall floor</string>
     <string name="cd_primary_action">Primary action</string>
+    <string name="cd_bottom_nav">Main navigation</string>
 </resources>

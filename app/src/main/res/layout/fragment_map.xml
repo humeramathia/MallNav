@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingStart="@dimen/screen_padding_horizontal"
+    android:paddingTop="@dimen/screen_padding_vertical"
+    android:paddingEnd="@dimen/screen_padding_horizontal">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/map_title"
+        android:textAppearance="@style/TextAppearance.MallTracker.ScreenHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_mall_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_xxs"
+        android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        tools:text="Canal Walk" />
+
+    <include
+        android:id="@+id/floors"
+        layout="@layout/view_floor_selector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_mall_name" />
+
+    <FrameLayout
+        android:id="@+id/map_frame"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/bg_map_canvas"
+        android:padding="@dimen/space_md"
+        app:layout_constraintBottom_toTopOf="@id/btn_locate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/floors">
+
+        <include
+            android:id="@+id/floor_plan"
+            layout="@layout/view_floor_plan"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_zoom_out"
+        style="@style/Widget.MallTracker.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_sm"
+        android:contentDescription="@string/cd_zoom_out"
+        app:icon="@drawable/ic_remove"
+        app:layout_constraintBottom_toTopOf="@id/btn_zoom_in"
+        app:layout_constraintEnd_toEndOf="@id/map_frame" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_zoom_in"
+        style="@style/Widget.MallTracker.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_sm"
+        android:contentDescription="@string/cd_zoom_in"
+        app:icon="@drawable/ic_add"
+        app:layout_constraintBottom_toBottomOf="@id/map_frame"
+        app:layout_constraintEnd_toEndOf="@id/map_frame" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_locate"
+        style="@style/Widget.MallTracker.Button.Secondary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_md"
+        android:layout_marginBottom="@dimen/space_md"
+        android:enabled="false"
+        android:text="@string/action_locate_me"
+        app:icon="@drawable/ic_my_location"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
