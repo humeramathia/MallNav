@@ -37,7 +37,8 @@ class StoreDetailsFragment : Fragment() {
         binding.btnBack.setOnClickListener { findNavController().navigateUp() }
         binding.btnMap.setOnClickListener { findNavController().navigate(R.id.mapFragment) }
         binding.btnNavigate.setOnClickListener {
-            findNavController().navigate(R.id.storeListFragment, StoreListFragment.args(StoreListFragment.MODE_START))
+            MallSession.destStoreId = store.id
+            findNavController().navigate(R.id.routeSearchFragment)
         }
     }
 

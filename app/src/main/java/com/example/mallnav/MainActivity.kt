@@ -46,6 +46,7 @@ class MainActivity : AppCompatActivity() {
             R.id.routePreviewFragment,
             R.id.navigationFragment,
             R.id.storeListFragment,
+            R.id.routeSearchFragment,
         )
         navController.addOnDestinationChangedListener { _, destination, _ ->
             val showTabs = destination.id !in hiddenTabs

@@ -23,6 +23,9 @@
     <dimen name="touch_target_min">48dp</dimen>
     <dimen name="button_height">52dp</dimen>
     <dimen name="search_bar_height">52dp</dimen>
+    <dimen name="location_field_height">56dp</dimen>
+    <dimen name="location_field_stroke">2dp</dimen>
+    <dimen name="location_plus_size">48dp</dimen>
     <dimen name="chip_height">40dp</dimen>
     <dimen name="floor_button_height">40dp</dimen>
     <dimen name="floor_button_min_width">48dp</dimen>

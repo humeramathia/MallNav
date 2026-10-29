@@ -33,6 +33,12 @@
     <string name="hint_search_stores">Search stores</string>
     <string name="hint_search_stores_facilities">Search stores and facilities</string>
     <string name="hint_search_nearby">Search for a store</string>
+    <string name="hint_pickup_store">What store can you see?</string>
+    <string name="hint_dropoff_store">Where do you want to go?</string>
+    <string name="hint_add_stop">Add a stop</string>
+    <string name="cd_pickup_store">Starting store you can see</string>
+    <string name="cd_dropoff_store">Destination store</string>
+    <string name="cd_add_stop">Add a stop</string>
 
     <string name="nav_home">Home</string>
     <string name="nav_map">Map</string>

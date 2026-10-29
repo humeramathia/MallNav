@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:paddingStart="@dimen/screen_padding_horizontal"
+    android:paddingTop="@dimen/screen_padding_vertical"
+    android:paddingEnd="@dimen/screen_padding_horizontal">
+
+    <ImageButton
+        android:id="@+id/btn_back"
+        android:layout_width="@dimen/icon_button_size"
+        android:layout_height="@dimen/icon_button_size"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_back"
+        android:src="@drawable/ic_arrow_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/pickup_field"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/location_field_height"
+        android:layout_marginTop="@dimen/space_md"
+        android:background="@drawable/bg_location_field_active"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_back">
+
+        <ImageView
+            android:id="@+id/iv_pickup"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_trip_origin" />
+
+        <EditText
+            android:id="@+id/et_pickup"
+            style="@style/Widget.MallTracker.SearchField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_weight="1"
+            android:contentDescription="@string/cd_pickup_store"
+            android:hint="@string/hint_pickup_store"
+            android:imeOptions="actionNext" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dropoff_field"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/location_field_height"
+        android:layout_marginTop="@dimen/space_sm"
+        android:layout_marginEnd="@dimen/space_sm"
+        android:background="@drawable/bg_location_field_inactive"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md"
+        app:layout_constraintEnd_toStartOf="@id/btn_add_stop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pickup_field">
+
+        <ImageView
+            android:id="@+id/iv_dropoff"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_trip_dest" />
+
+        <EditText
+            android:id="@+id/et_dropoff"
+            style="@style/Widget.MallTracker.SearchField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_weight="1"
+            android:contentDescription="@string/cd_dropoff_store"
+            android:hint="@string/hint_dropoff_store"
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btn_add_stop"
+        android:layout_width="@dimen/location_plus_size"
+        android:layout_height="@dimen/location_plus_size"
+        android:background="@drawable/bg_location_plus"
+        android:contentDescription="@string/cd_add_stop"
+        android:src="@drawable/ic_add_on_dark"
+        app:layout_constraintBottom_toBottomOf="@id/dropoff_field"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dropoff_field" />
+
+    <LinearLayout
+        android:id="@+id/stop_field"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/location_field_height"
+        android:layout_marginTop="@dimen/space_sm"
+        android:background="@drawable/bg_location_field_inactive"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/space_md"
+        android:paddingEnd="@dimen/space_md"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dropoff_field"
+        tools:visibility="visible">
+
+        <ImageView
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:contentDescription="@null"
+            android:importantForAccessibility="no"
+            android:src="@drawable/ic_trip_dest" />
+
+        <EditText
+            android:id="@+id/et_stop"
+            style="@style/Widget.MallTracker.SearchField"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/space_sm"
+            android:layout_weight="1"
+            android:hint="@string/hint_add_stop"
+            android:imeOptions="actionSearch" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_section"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_lg"
+        android:text="@string/label_nearby_stores"
+        android:textAppearance="@style/TextAppearance.MallTracker.Caption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stop_field" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_stores"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/space_sm"
+        android:clipToPadding="false"
+        android:paddingBottom="@dimen/space_lg"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/btn_continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_section"
+        tools:listitem="@layout/item_store_card" />
+
+    <TextView
+        android:id="@+id/tv_empty"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.MallTracker.SecondaryBody"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/rv_stores"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/rv_stores" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_continue"
+        style="@style/Widget.MallTracker.Button.Prominent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_sm"
+        android:layout_marginBottom="@dimen/space_md"
+        android:enabled="false"
+        android:text="@string/action_continue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

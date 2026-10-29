@@ -74,4 +74,11 @@
     <color name="category_electronics">@color/sage_container</color>
     <color name="category_sports">@color/olive_container</color>
     <color name="category_services">@color/cream_deep</color>
+
+    <color name="location_field_active_fill">@color/white</color>
+    <color name="location_field_active_stroke">@color/charcoal</color>
+    <color name="location_field_inactive_fill">#F1F1F1</color>
+    <color name="location_field_inactive_stroke">#E4E4E4</color>
+    <color name="location_plus">@color/charcoal</color>
+    <color name="on_location_plus">@color/white</color>
 </resources>

@@ -62,6 +62,12 @@
         tools:layout="@layout/fragment_store_list" />
 
     <fragment
+        android:id="@+id/routeSearchFragment"
+        android:name="com.example.mallnav.ui.navigate.RouteSearchFragment"
+        android:label="@string/action_navigate"
+        tools:layout="@layout/fragment_route_search" />
+
+    <fragment
         android:id="@+id/confirmStartFragment"
         android:name="com.example.mallnav.ui.navigate.ConfirmStartFragment"
         android:label="@string/confirm_title"

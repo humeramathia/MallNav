@@ -29,10 +29,7 @@ class MallHomeFragment : Fragment() {
         binding.tvMallName.text = mall?.name ?: getString(R.string.app_name)
         binding.btnBack.setOnClickListener { findNavController().navigateUp() }
         binding.btnNavigate.setOnClickListener {
-            findNavController().navigate(
-                R.id.storeListFragment,
-                StoreListFragment.args(StoreListFragment.MODE_START),
-            )
+            findNavController().navigate(R.id.routeSearchFragment)
         }
         binding.cardMap.setOnClickListener { findNavController().navigate(R.id.mapFragment) }
         binding.cardFind.setOnClickListener { findNavController().navigate(R.id.directoryFragment) }

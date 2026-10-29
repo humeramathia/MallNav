@@ -10,7 +10,6 @@ import com.example.mallnav.R
 import com.example.mallnav.data.MallSession
 import com.example.mallnav.data.MockMallRepository
 import com.example.mallnav.databinding.FragmentConfirmStartBinding
-import com.example.mallnav.ui.store.StoreListFragment
 
 class ConfirmStartFragment : Fragment() {
     private var _binding: FragmentConfirmStartBinding? = null
@@ -28,7 +27,7 @@ class ConfirmStartFragment : Fragment() {
         binding.btnBack.setOnClickListener { findNavController().navigateUp() }
         binding.btnChange.setOnClickListener { findNavController().navigateUp() }
         binding.btnContinue.setOnClickListener {
-            findNavController().navigate(R.id.storeListFragment, StoreListFragment.args(StoreListFragment.MODE_DEST))
+            findNavController().navigate(R.id.routeSearchFragment)
         }
     }
 
